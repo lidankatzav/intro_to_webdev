@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Poor+Story&display=swap");
+
+.site {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-template-areas:
+    "header header"
+    "sidebar main"
+    "footer footer";
+  height: 100vh;
+}
+
+.header {
+  background: #3f829d;
+  grid-area: header;
+  display: flex;
+  height: 15vh;
+  align-items: center;
+}
+
+.logo {
+  height: 60%;
+  margin: 3%;
+}
+
+.title {
+  font-family: "Poor Story", cursive;
+  font-size: 200%;
+  color: azure;
+}
+
+.login {
+  height: 75%;
+  padding: 1%;
+  margin-left: auto;
+}
+
+.sidebar {
+  background: #bbd4dd;
+  grid-area: sidebar;
+  height: 70vh;
+}
+
+.main_content {
+  grid-area: main;
+  height: 70vh;
+}
+
+.footer {
+  background: #3f829d;
+  grid-area: footer;
+  height: 15vh;
+}
