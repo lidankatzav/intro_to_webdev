@@ -94,7 +94,57 @@
           </div>
         </div>
         <div id = "feedback">
-
+          <h1 class = "titles">Feedback Form</h1>
+          <h2 class = "subtitles">I'd love to hear your honest thoughts!</h2>
+          <h3 class = "subtitles">Personal Deatails</h3>
+          <form method="get">
+            <div class = "part1">
+              <label for = "name">Full name:</label>
+              <input type="text" id = "name" name="name" required/><br/><br/>
+              <label for = "email">Email:</label>
+              <input type = "email" id = "email" name = "email" required><br/><br/>
+            </div>
+            <div class = "part2">
+              <label for = "phone">Phone number:</label>
+              <input type = "tel" id = "phone" name = "phone"><br/><br/> 
+              <label for = "date">Date of birth:</label>
+              <input type = "date" id = "date" name = "birth_date" value="2000-01-01" min="1900-01-01" max="2050-12-31"><br/><br/>
+            </div>
+            <div class = "part3">
+              <h3 class = "subtitles">Your Feedback</h3>
+              <p class = "rate">
+                  <label>Rating:</label>
+                  <label for = "1">    1</label>
+                  <input type = "radio" value = "1" id = "1" name = "rating">
+                  <label for = "2">2</label>
+                  <input type = "radio" value = "2" id = "2" name = "rating">
+                  <label for = "3">3</label>
+                  <input type = "radio" value = "3" id = "3" name = "rating">
+                  <label for = "4">4</label>
+                  <input type = "radio" value = "4" id = "4" name = "rating">
+                  <label for = "5">5</label>
+                  <input type = "radio" value =  "5" id = "5" name = "rating">
+              </p>
+              <label for="find_in">How did you find this website?</label>
+              <br/>
+              <select id="find_in" name="find_in">
+                  <option>GitHub</option>
+                  <option>LinkedIn</option>
+                  <option>WebDev</option>
+                  <option>Google</option>
+                  <option>Other</option>
+              </select>
+              <br/><br/><br/>
+              <input type="submit" value="Submit"/>
+              <input type="reset" value="Reset"/>
+            </div>
+            <div class = "part4">
+              <br/><br/>
+              <label>Your message:</label>
+              <br/>
+              <textarea name = "message"></textarea>
+            </div>
+          </form>
         </div>
       </main>
       <footer class="footer">

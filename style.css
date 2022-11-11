@@ -56,6 +56,7 @@
   display: flex;
   text-align: center;
   justify-content: center;
+  overflow: auto;
 }
 
 .sidebar > nav > div > a {
@@ -135,11 +136,12 @@
   overflow: auto;
 }
 
-.text > p {
+.text > p,
+label {
   font-family: "Open Sans", sans-serif;
-  font-size: 110%;
   text-align: justify;
   margin-left: 1%;
+  font-size: 110%;
 }
 
 .quotes {
@@ -187,6 +189,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: auto;
 }
 
 .footer > p {
@@ -203,4 +206,80 @@
 
 .footer > p > a:hover {
   color: black;
+}
+
+#feedback > h2 {
+  font-family: "Lato", sans-serif;
+}
+
+#feedback {
+  overflow: auto;
+}
+
+label {
+  display: inline-block;
+  width: 40%;
+}
+
+input,
+textarea,
+select {
+  box-sizing: border-box;
+  border: 1px solid black;
+  border-radius: 2px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 100%;
+  margin-left: 1%;
+  width: 49%;
+}
+
+input:hover,
+textarea:hover,
+select:hover {
+  border: 3px solid black;
+  border-radius: 2px;
+  box-shadow: 5px black;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+form > div {
+  margin-left: 2%;
+}
+
+.rate input {
+  width: 15px;
+}
+
+.rate label {
+  display: inline;
+  margin-left: 5px;
+}
+
+.part3 > label {
+  width: 70%;
+}
+
+.part3 > select {
+  width: 40%;
+  height: 15%;
+  margin-left: 2%;
+}
+
+textarea {
+  height: 50%;
+  width: 90%;
+  margin-left: 1%;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  width: 25%;
+  height: 15%;
+  margin-left: 10%;
+  margin-right: auto;
+  background-color: #94cefe;
 }
