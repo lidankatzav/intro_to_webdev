@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>Lidan Katzav</title>
+    <title>WebDev Project</title>
     <meta charset="UTF-8" />
     <link
       rel="icon"
@@ -12,20 +12,97 @@
   <body>
     <div class="site">
       <header class="header">
-        <a href="index.html"
+        <a href="#home" class="logo"
           ><img
             src="https://seeklogo.com/images/E/emoji-logo-E71A14AE68-seeklogo.com.png"
-            class="logo"
         /></a>
-        <a href="index.html" class="title"><h1>Lidan Katzav</h1></a>
+        <a href="#home" class="title"><h1>WebDev Project</h1></a>
         <img
           src="https://icons.iconarchive.com/icons/blackvariant/button-ui-system-folders-alt/512/Users-icon.png"
           class="login"
         />
       </header>
-      <aside class="sidebar"></aside>
-      <main class="main_content"></main>
-      <footer class="footer"></footer>
+      <aside class="sidebar">
+        <nav>
+          <div><a href = "#home">Navigation</a><br /></div>
+          <div><a href="#movie">My Favorite Movie</a><br /></div>
+          <div><a href="#place">My Favorite Place</a><br /></div>
+          <div><a href="index.html">Feedback Form</a><br /></div>
+          <div>
+            <a href="schools/schools.html" target="_blank"
+              >My Schools <img src="https://i.stack.imgur.com/To3El.png" /></a
+            ><br />
+          </div>
+          <div>
+            <a href="index.html"
+              >This Project on GitHub
+              <img src="https://i.stack.imgur.com/To3El.png" /></a
+            ><br />
+          </div>
+        </nav>
+      </aside>
+      <main class="main_content">
+        <div id="home">
+          <p>
+            <h1>Hello!</h1>
+            <h2>Welcome to my website.</h2>
+            My name is Lidan Katzav. I'm a student on the WebDev bootcampus.<br/><br/>
+            These are my three favorite emojis:<br/>
+            <h2>😄 😦 😴</h2>
+          </p>
+        </div>
+        <div id = "movie">
+            <div class = "text">
+              <h1 class = "titles">My Favorite Movie: Ted</h1>
+              <h2 class = "subtitles">Description</h2>
+              <p>The film tells the story of John Bennett, a Boston native whose childhood wish brings his teddy bear friend Ted to life. 
+                  <br/>
+                  However, in adulthood, Ted and John's friendship begins to interfere with the progression of John's relationship with his girlfriend, Lori Collins.</p>
+              <h2 class = "subtitles">Why I like this movie</h2>
+              <p>This is good and fun film. Loads of great humor. </p>
+              <h2 class = "subtitles">Funny quote from the movie</h2>
+              <blockquote class = "quotes">"Hello, 911? I Need The Police Right Away! This Guy Took My Teddy Bear! Hello?" - John</blockquote>
+            </div>
+            <div class = "photo">
+              <img alt="Ted Movie Poster" src="https://images.moviesanywhere.com/e3b7b7c402bdbd0c693e2f0f02157eec/adfaf417-d71a-48c4-8a4b-565ec7cd8747.webp?h=375&resize=fit&w=250"></img>
+              <a href="https://www.imdb.com/title/tt1637725/" target="_blank">Visit IMDb page about the movie!</a>
+            </div>
+        </div>
+        <div id = "place">
+          <div class = "text">
+            <h1 class = "titles">My Favorite Place: London</h1>
+            <h2 class = "subtitles">Description</h2>
+            <p>London, the capital of England and the United Kingdom, is a 21st-century city with history stretching back to Roman times.</p>
+            <h2 class = "subtitles">Why I like this place</h2>
+            <p>London has everything you need and want.
+              <br/>
+              Transport is efficient.
+              <br/>
+              Food - local and international food are accessible in the British London market.
+              <br/>
+              Safety — fairly safe city to live.
+              <br/>
+              Fashion — you got it.
+              <br/>
+              Recreation — from well- maintained parks are found all over London. You feel as if you were in the countryside.
+              <br/>
+              In short, London has got everything to offer.</p>
+          </div>
+          <div class = "photo">
+            <img alt = "London Photo" class = "photos" src = "https://st.depositphotos.com/1004061/2699/i/950/depositphotos_26992121-stock-photo-london-the-uk-red-bus.jpg" width="700" height="400"></img>
+            <a href="https://www.google.co.uk/maps/place/%D7%9C%D7%95%D7%A0%D7%93%D7%95%D7%9F,+%D7%91%D7%A8%D7%99%D7%98%D7%A0%D7%99%D7%94%E2%80%AD/@51.5285582,0.0384842,11z/data=!3m1!4b1!4m6!3m5!1s0x47d8a00baf21de75:0x52963a5addd52a99!8m2!3d51.5072178!4d-0.1275862!16zL20vMDRqcGw" target="_blank">Visit Google map of London!</a>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <p>
+          Lidan Katzav
+          <br />
+          <a href="mailto:Lidankatzav5@gmail.com" target="_blank"
+            >Lidankatzav5@gmail.com</a
+          >
+        </p>
+      </footer>
     </div>
   </body>
 </html>

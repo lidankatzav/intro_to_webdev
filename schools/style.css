@@ -1,0 +1,41 @@
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#titles,
+#end {
+  background-color: aqua;
+}
+
+.junior {
+  background-color: cornsilk;
+}
+
+.mid-school {
+  background-color: chartreuse;
+}
+
+.high-school {
+  background-color: coral;
+}
+
+body {
+  font-family: verdana;
+  background-image: linear-gradient(cornsilk, coral, turquoise);
+  text-align: center;
+}
+
+body > a {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  border: 1px solid black;
+  padding: 1%;
+  background-color: aqua;
+}
