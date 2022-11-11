@@ -39,3 +39,7 @@ body > a {
   padding: 1%;
   background-color: aqua;
 }
+
+body > a:hover {
+  color: white;
+}
