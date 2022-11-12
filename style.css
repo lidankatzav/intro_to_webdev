@@ -422,4 +422,8 @@ body.dark input[type="reset"]:hover {
     margin-right: auto;
     background-color: #94cefe;
   }
+
+  .sidebar > nav > div > a:link {
+    padding-top: 50%;
+  }
 }
