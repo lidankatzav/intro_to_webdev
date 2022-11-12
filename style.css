@@ -1,0 +1,22 @@
+.titles {
+  font-family: "Courier New";
+}
+
+.photos {
+  border: 5px solid black;
+  box-shadow: 10px 10px 10px black;
+}
+
+body {
+  background-image: linear-gradient(cornsilk, coral, turquoise);
+}
+
+img[alt="London Photo"] {
+  width: 400px;
+  height: 300px;
+}
+
+img[alt="Ted Movie Poster"] {
+  width: 250px;
+  height: 350px;
+}
