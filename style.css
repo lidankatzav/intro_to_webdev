@@ -160,6 +160,11 @@ label {
   margin-left: 25%;
   margin-right: auto;
   margin-top: 10%;
+  transition: transform 0.2s;
+}
+
+.photo > img:hover {
+  transform: scale(1.2);
 }
 
 .photo > a {
@@ -202,6 +207,11 @@ label {
   height: 50%;
   width: 100%;
   padding-bottom: 2%;
+  transition: transform 0.1s;
+}
+
+.place_imgs > img:hover {
+  transform: scale(1.2);
 }
 
 .footer {
@@ -399,11 +409,11 @@ body.dark input[type="reset"]:hover {
   }
 
   #place {
-    padding-top: 110%;
+    padding-top: 80%;
   }
 
   #feedback {
-    padding-top: 250%;
+    padding-top: 200%;
   }
 
   #place > .photo > a {
@@ -421,5 +431,22 @@ body.dark input[type="reset"]:hover {
     margin-left: 10%;
     margin-right: auto;
     background-color: #94cefe;
+  }
+
+  label {
+    font-size: 80%;
+  }
+
+  .text > p,
+  .quotes {
+    font-size: 80%;
+  }
+
+  .titles {
+    font-size: 100%;
+  }
+
+  .subtitles {
+    font-size: 90%;
   }
 }
