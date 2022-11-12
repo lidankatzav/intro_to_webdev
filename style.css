@@ -141,7 +141,7 @@ label {
   font-family: "Open Sans", sans-serif;
   text-align: justify;
   margin-left: 1%;
-  font-size: 110%;
+  font-size: 100%;
 }
 
 .quotes {
@@ -157,8 +157,9 @@ label {
 .photo > img {
   height: 60%;
   width: 60%;
-  border: 5px solid #4a99ff;
-  border-radius: 10px;
+  box-sizing: border-box;
+  border: 1px solid black;
+  border-radius: 2px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -167,19 +168,26 @@ label {
 
 .photo > a {
   text-decoration: none;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 100%;
-  color: white;
+  color: black;
   background-color: #94cefe;
-  border: 4px solid #4a99ff;
-  border-radius: 3px;
+  box-sizing: border-box;
+  border: 1px solid black;
+  border-radius: 2px;
   display: block;
-  margin: 10%;
   text-align: center;
+  width: 70%;
+  height: 8%;
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2%;
+  overflow: auto;
 }
 
 .photo > a:hover {
-  color: black;
+  color: white;
 }
 
 .footer {
@@ -228,7 +236,7 @@ select {
   border: 1px solid black;
   border-radius: 2px;
   font-family: "Open Sans", sans-serif;
-  font-size: 100%;
+  font-size: 90%;
   margin-left: 1%;
   width: 49%;
 }
@@ -264,7 +272,7 @@ form > div {
 }
 
 .part3 > select {
-  width: 40%;
+  width: 35%;
   height: 15%;
   margin-left: 2%;
 }
@@ -282,4 +290,55 @@ input[type="reset"] {
   margin-left: 10%;
   margin-right: auto;
   background-color: #94cefe;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  color: white;
+}
+
+body.dark .header,
+body.dark .footer {
+  background-color: black;
+}
+
+body.dark .sidebar {
+  background-color: rgb(52, 52, 52);
+  color: white;
+}
+
+body.dark .sidebar > nav > div:nth-child(even) {
+  background-color: gray;
+}
+
+body.dark .sidebar > nav > div > a {
+  color: white;
+}
+
+body.dark .sidebar > nav > div > a:hover {
+  color: lightblue;
+}
+
+body.dark .footer > p > a:hover {
+  color: lightblue;
+}
+
+body.dark .photo > a {
+  background-color: gray;
+  color: white;
+}
+
+body.dark .photo > a:hover {
+  color: lightblue;
+}
+
+body.dark input[type="submit"],
+body.dark input[type="reset"] {
+  background-color: gray;
+  color: white;
+}
+
+body.dark input[type="submit"]:hover,
+body.dark input[type="reset"]:hover {
+  color: lightblue;
 }

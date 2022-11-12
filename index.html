@@ -9,7 +9,7 @@
     />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body class = "light">
     <div class="site">
       <header class="header">
         <a href="#home" class="logo"
@@ -100,13 +100,15 @@
           <form method="get">
             <div class = "part1">
               <label for = "name">Full name:</label>
-              <input type="text" id = "name" name="name" required/><br/><br/>
+              <input type="text" id = "name" name="name" pattern = "[A-Za-zא-ת]+"required/><br/><br/>
               <label for = "email">Email:</label>
-              <input type = "email" id = "email" name = "email" required><br/><br/>
+              <input type = "email" id = "email" name = "email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required><br/><br/>
+              <p> </p>
             </div>
             <div class = "part2">
-              <label for = "phone">Phone number:</label>
-              <input type = "tel" id = "phone" name = "phone"><br/><br/> 
+              <label for = "phone">Phone number: (only Israeli)</label>
+              <input type = "tel" id = "phone" name = "phone" pattern="0(5[^7]|[2-4]|[8-9]|7[0-9])[0-9]{7}$"><br/><br/> 
+              
               <label for = "date">Date of birth:</label>
               <input type = "date" id = "date" name = "birth_date" value="2000-01-01" min="1900-01-01" max="2050-12-31"><br/><br/>
             </div>
