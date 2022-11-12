@@ -423,7 +423,11 @@ body.dark input[type="reset"]:hover {
     background-color: #94cefe;
   }
 
-  .sidebar > nav > div > a:link {
-    padding-top: 50%;
+  .place_imgs {
+    width: 85%;
+  }
+
+  .place_imgs > img {
+    width: 70%;
   }
 }
