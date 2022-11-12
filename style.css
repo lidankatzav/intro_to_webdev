@@ -1,26 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,900&family=Open+Sans:wght@300;700&family=Poor+Story&display=swap");
 
-.site {
-  display: grid;
-  grid-template-columns: 20% 80%;
-  grid-template-areas:
-    "header header"
-    "sidebar main"
-    "footer footer";
-  height: 100vh;
-}
-
-@media only screen and (max-width: 550px) {
+@media only screen and (min-width: 600px) {
   .site {
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.4fr 0.4fr 2.2fr 0.4fr;
+    display: grid;
+    grid-template-columns: 20% 80%;
     grid-template-areas:
-      "header"
-      "sidebar"
-      "main"
-      "footer";
+      "header header"
+      "sidebar main"
+      "footer footer";
     height: 100vh;
-    overflow: scroll;
   }
 }
 
@@ -103,7 +91,7 @@
 .main_content {
   grid-area: main;
   height: 70vh;
-  overflow: scroll;
+  overflow: auto;
 }
 
 .main_content > * {
@@ -366,4 +354,59 @@ body.dark input[type="reset"] {
 body.dark input[type="submit"]:hover,
 body.dark input[type="reset"]:hover {
   color: lightblue;
+}
+
+@media only screen and (max-width: 600px) {
+  .site {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 0.4fr 2.2fr 2.2fr 2.2fr 2.2fr 2.2fr 2.2fr 0.4fr;
+    grid-template-areas:
+      "header"
+      "sidebar"
+      "main"
+      "footer";
+    overflow: scroll;
+    height: 100vh;
+  }
+
+  .sidebar > nav > div:nth-child(even) {
+    width: 600px;
+  }
+
+  .sidebar > nav > div:nth-child(odd) {
+    width: 600px;
+  }
+
+  .sidebar {
+    height: 58%;
+  }
+
+  .sidebar > nav > div > a > img {
+    height: 100%;
+    width: 3%;
+  }
+
+  #movie,
+  #place,
+  #feedback {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .text,
+  .photo {
+    overflow: visible;
+  }
+
+  #place {
+    padding-top: 100%;
+  }
+
+  #feedback {
+    padding-top: 230%;
+  }
+
+  #place > .photo > a {
+    height: 4%;
+  }
 }
