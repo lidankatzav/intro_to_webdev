@@ -378,7 +378,7 @@ body.dark input[type="reset"]:hover {
   }
 
   .sidebar {
-    height: 58%;
+    height: 70%;
   }
 
   .sidebar > nav > div > a > img {
@@ -403,7 +403,7 @@ body.dark input[type="reset"]:hover {
   }
 
   #feedback {
-    padding-top: 230%;
+    padding-top: 250%;
   }
 
   #place > .photo > a {
