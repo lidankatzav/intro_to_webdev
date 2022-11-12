@@ -422,12 +422,4 @@ body.dark input[type="reset"]:hover {
     margin-right: auto;
     background-color: #94cefe;
   }
-
-  .place_imgs {
-    width: 85%;
-  }
-
-  .place_imgs > img {
-    width: 70%;
-  }
 }
