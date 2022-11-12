@@ -409,4 +409,17 @@ body.dark input[type="reset"]:hover {
   #place > .photo > a {
     height: 4%;
   }
+
+  .title {
+    font-size: 90%;
+  }
+
+  input[type="submit"],
+  input[type="reset"] {
+    width: 40%;
+    height: 10%;
+    margin-left: 10%;
+    margin-right: auto;
+    background-color: #94cefe;
+  }
 }
