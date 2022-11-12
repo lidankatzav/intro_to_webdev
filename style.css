@@ -150,10 +150,6 @@ label {
   margin-left: 1%;
 }
 
-.photo {
-  grid-area: photo;
-}
-
 .photo > img {
   height: 60%;
   width: 60%;
@@ -161,7 +157,7 @@ label {
   border: 1px solid black;
   border-radius: 2px;
   display: block;
-  margin-left: auto;
+  margin-left: 25%;
   margin-right: auto;
   margin-top: 10%;
 }
@@ -180,7 +176,7 @@ label {
   width: 70%;
   height: 8%;
   margin-top: 5%;
-  margin-left: auto;
+  margin-left: 20%;
   margin-right: auto;
   padding-top: 2%;
   overflow: auto;
@@ -188,6 +184,18 @@ label {
 
 .photo > a:hover {
   color: white;
+}
+
+.place_imgs {
+  box-sizing: border-box;
+  border: 1px solid black;
+  border-radius: 2px;
+  margin-left: 20%;
+  margin-right: auto;
+  margin-top: 5%;
+  height: 80%;
+  width: 70%;
+  overflow: auto;
 }
 
 .footer {
@@ -255,7 +263,7 @@ form {
 }
 
 form > div {
-  margin-left: 2%;
+  margin-left: 1%;
 }
 
 .rate input {
