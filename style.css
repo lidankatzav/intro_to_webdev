@@ -365,7 +365,7 @@ body.dark input[type="reset"]:hover {
       "sidebar"
       "main"
       "footer";
-    overflow: scroll;
+    overflow: visible;
     height: 100vh;
   }
 
@@ -399,11 +399,11 @@ body.dark input[type="reset"]:hover {
   }
 
   #place {
-    padding-top: 100%;
+    padding-top: 80%;
   }
 
   #feedback {
-    padding-top: 250%;
+    padding-top: 210%;
   }
 
   #place > .photo > a {
