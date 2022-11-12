@@ -160,11 +160,6 @@ label {
   margin-left: 25%;
   margin-right: auto;
   margin-top: 10%;
-  transition: transform 0.2s;
-}
-
-.photo > img:hover {
-  transform: scale(1.1);
 }
 
 .photo > a {
@@ -207,13 +202,25 @@ label {
   height: 50%;
   width: 100%;
   padding-bottom: 2%;
-  transition: transform 0.1s;
 }
 
 .place_imgs > img:hover {
+  position: absolute;
+  top: 25%;
+  right: 35%;
+  width: 40%;
+  height: 40%;
   transform: scale(1.2);
 }
 
+.photo > img:hover {
+  position: absolute;
+  top: 5%;
+  right: 45%;
+  height: 50%;
+  width: 25%;
+  transform: scale(1.2);
+}
 .footer {
   background: #4a99ff;
   grid-area: footer;
